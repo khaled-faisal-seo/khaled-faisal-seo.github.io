@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khaled Faisal | Senior SEO Specialist & Team Lead</title>
-    <meta name="description" content="Portfolio of Khaled Faisal - Senior SEO Specialist with 8+ years of experience in Technical SEO, E-commerce Growth, GA4, and Team Leadership.">
+    <meta name="description" content="Portfolio of Khaled Faisal - Senior SEO Specialist with 8+ years of experience in Technical SEO, E-commerce Growth, Paid Media, GA4, and Team Leadership.">
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_CODE" />
@@ -26,6 +26,8 @@
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --border-color: #334155;
+            --fiverr-color: #1dbf73;
+            --linkedin-color: #0a66c2;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
@@ -69,19 +71,43 @@
         header { padding: 30px 0 20px; text-align: center; }
         .badge { display: inline-block; background: rgba(56, 189, 248, 0.1); color: var(--accent-color); border: 1px solid var(--accent-color); padding: 4px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 16px; }
         h1 { font-size: 38px; font-weight: 800; margin-bottom: 10px; }
-        .subtitle { font-size: 18px; color: var(--text-muted); max-width: 650px; margin: 0 auto 24px; }
+        .subtitle { font-size: 18px; color: var(--text-muted); max-width: 720px; margin: 0 auto 24px; }
         
-        .cta-group { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; }
-        .btn { padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; transition: 0.3s; }
-        .btn-primary { background: var(--accent-color); color: var(--bg-color); }
-        .btn-primary:hover { opacity: 0.9; }
-        .btn-secondary { border: 1px solid var(--border-color); color: var(--text-main); }
-        .btn-secondary:hover { background: var(--card-bg); }
+        .cta-group { 
+            display: flex; 
+            justify-content: center; 
+            gap: 12px; 
+            margin-bottom: 40px; 
+            flex-wrap: wrap; 
+        }
+        .btn { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 8px; 
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            font-size: 14px; 
+            transition: all 0.25s ease; 
+        }
+        .btn svg { width: 16px; height: 16px; fill: currentColor; }
 
+        .btn-primary { background: var(--accent-color); color: var(--bg-color); }
+        .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); }
+
+        .btn-secondary { border: 1px solid var(--border-color); color: var(--text-main); background: #111827; }
+        .btn-secondary:hover { background: var(--card-bg); border-color: #475569; transform: translateY(-2px); }
+
+        .btn-linkedin:hover { border-color: var(--linkedin-color); color: #38bdf8; background: rgba(10, 102, 194, 0.1); }
+        .btn-fiverr:hover { border-color: var(--fiverr-color); color: #34d399; background: rgba(29, 191, 115, 0.1); }
+
+        /* --- Sections & Grids --- */
         .section-title { font-size: 24px; margin: 40px 0 20px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; }
         
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 24px; }
+        .card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 24px; transition: transform 0.2s ease, border-color 0.2s ease; }
+        .card:hover { transform: translateY(-3px); border-color: #475569; }
         .card h3 { font-size: 18px; color: var(--accent-color); margin-bottom: 10px; }
         .card p { font-size: 14px; color: var(--text-muted); }
         
@@ -93,6 +119,8 @@
         @media (max-width: 600px) {
             nav { flex-direction: column; gap: 15px; }
             h1 { font-size: 30px; }
+            .cta-group { flex-direction: column; align-items: stretch; }
+            .btn { justify-content: center; }
         }
     </style>
 </head>
@@ -112,28 +140,63 @@
         <header>
             <span class="badge">BSc in CSE • 8+ Years Experience</span>
             <h1>Khaled Faisal</h1>
-            <p class="subtitle">Senior SEO Specialist & Technical Marketer specializing in scalable technical SEO architectures, e-commerce revenue growth, and analytics automation.</p>
+            <p class="subtitle">Senior SEO Specialist & Full-Funnel Growth Strategist specializing in technical architectures, e-commerce scale, paid search (PPC), meta advertising, and analytics automation.</p>
+            
             <div class="cta-group">
-                <a href="mailto:your-email@example.com" class="btn btn-primary">Get in Touch</a>
-                <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
+                <a href="mailto:your-email@example.com" class="btn btn-primary">
+                    Get in Touch
+                </a>
+
+                <!-- LinkedIn Profile -->
+                <a href="https://www.linkedin.com/in/khaled-mohammad-faisal-1573b582/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-linkedin">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+
+                <!-- Fiverr Profile -->
+                <a href="https://www.fiverr.com/s/DmBQB9y" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-fiverr">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M23 12.001a11 11 0 1 1-22 0 11 11 0 0 1 22 0Zm-6.556-3.882h-1.636v-.818c0-.452-.366-.818-.818-.818h-.818v1.636h-1.636V6.464a.818.818 0 0 0-.818-.818H7.909v2.455h1.637v5.727H6.273v1.636h4.91v-5.727h1.636v5.727h3.273v-5.727h.355l1.09-1.636h-1.445V8.119h.355l1.09-1.636h-1.445v1.636Z"/>
+                    </svg>
+                    <span>Fiverr</span>
+                </a>
             </div>
         </header>
 
         <main>
-            <!-- Core Expertise -->
+            <!-- Core Competencies (6-Card Structure) -->
             <h2 class="section-title">Core Competencies</h2>
             <div class="grid">
                 <div class="card">
                     <h3>Technical SEO Architecture</h3>
                     <p>Advanced crawl budget optimization, log file audits, schema markup implementation, Core Web Vitals remediation, and JavaScript SEO.</p>
                 </div>
+
                 <div class="card">
                     <h3>E-Commerce & Scale</h3>
                     <p>Taxonomy restructuring, faceted navigation indexing control, programmatic internal linking, and transactional keyword mapping.</p>
                 </div>
+
                 <div class="card">
                     <h3>Analytics & Measurement</h3>
-                    <p>Advanced GA4 measurement protocol setups, Search Console data modeling via BigQuery, and Looker Studio reporting dashboards.</p>
+                    <p>Advanced GA4 measurement protocol setups, GTM server-side tracking, Search Console data modeling, and Looker Studio dashboards.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Google Ads & Paid Search</h3>
+                    <p>High-ROI Search, Shopping, and Performance Max (PMax) campaigns with automated bid strategies, negative keyword trees, and conversion tracking.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Paid Social (Meta Ads)</h3>
+                    <p>Full-funnel Meta advertising (Facebook & Instagram), custom audience segmentation, Pixel/CAPI setup, dynamic creative testing, and ROAS scaling.</p>
+                </div>
+
+                <div class="card">
+                    <h3>SMM & Content Strategy</h3>
+                    <p>Data-backed multi-channel content roadmaps, organic engagement funnels, visual brand storytelling, and audience retention workflows.</p>
                 </div>
             </div>
 
