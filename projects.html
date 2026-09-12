@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Case Studies | Khaled Faisal</title>
+    <meta name="description" content="SEO Case studies, technical migrations, and data analytics architectures executed by Khaled Faisal.">
+    
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --tag-bg: rgba(56, 189, 248, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- Navigation Bar --- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        .nav-logo {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-main);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+        .nav-logo span { color: var(--accent-color); }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent-color);
+        }
+
+        /* --- Page Header --- */
+        header { padding: 20px 0 40px; }
+        h1 { font-size: 34px; font-weight: 800; margin-bottom: 12px; }
+        .header-desc { font-size: 16px; color: var(--text-muted); max-width: 700px; }
+
+        /* --- Projects Grid --- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        .tag {
+            background: var(--tag-bg);
+            color: var(--accent-color);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .project-card h2 {
+            font-size: 20px;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        .project-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+        .view-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: gap 0.2s ease;
+        }
+        .view-btn:hover {
+            gap: 12px;
+        }
+
+        footer { text-align: center; padding: 40px 0 30px; font-size: 13px; color: var(--text-muted); border-top: 1px solid var(--border-color); }
+
+        @media (max-width: 600px) {
+            nav { flex-direction: column; gap: 15px; }
+            h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index.html" class="nav-logo">Khaled<span>.SEO</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="mailto:your-email@example.com">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <h1>Case Studies & Projects</h1>
+            <p class="header-desc">A deep dive into site redesigns, programmatic taxonomy overhauls, and analytics pipelines showing real architectural execution.</p>
+        </header>
+
+        <!-- Projects Grid -->
+        <main class="projects-grid">
+            
+            <!-- Project 1: Driving School -->
+            <article class="project-card">
+                <div>
+                    <div class="tags">
+                        <span class="tag">Technical SEO</span>
+                        <span class="tag">Architecture</span>
+                        <span class="tag">Migration</span>
+                    </div>
+                    <h2>A Auto Driving School Redesign</h2>
+                    <p>Complete structural overhaul for TDLR-approved state driving courses. Resolved severe content conflation, normalized H-tag structures, and designed siloed category clusters for localized Texas search intent.</p>
+                </div>
+                <a href="projects/driving-school.html" class="view-btn">Read Case Study →</a>
+            </article>
+
+            <!-- Project 2: E-Commerce SEO -->
+            <article class="project-card">
+                <div>
+                    <div class="tags">
+                        <span class="tag">E-Commerce</span>
+                        <span class="tag">Crawl Budget</span>
+                        <span class="tag">Internal Linking</span>
+                    </div>
+                    <h2>Multi-Category E-Commerce Scaling</h2>
+                    <p>Scaled non-brand visibility across competitive product lines through faceted navigation indexing controls, programmatic breadcrumb architecture, and dynamic canonicalization.</p>
+                </div>
+                <a href="projects/ecommerce-seo.html" class="view-btn">Read Case Study →</a>
+            </article>
+
+            <!-- Project 3: Analytics & Measurement -->
+            <article class="project-card">
+                <div>
+                    <div class="tags">
+                        <span class="tag">GA4</span>
+                        <span class="tag">Search Console</span>
+                        <span class="tag">BigQuery</span>
+                    </div>
+                    <h2>Enterprise Analytics & Data Pipeline</h2>
+                    <p>Engineered automated Search Console data exports via BigQuery to monitor search cannibalization and built real-time attribution dashboards in Looker Studio.</p>
+                </div>
+                <a href="projects/analytics-pipeline.html" class="view-btn">Read Case Study →</a>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>© 2026 Khaled Faisal. Built with technical control on GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
