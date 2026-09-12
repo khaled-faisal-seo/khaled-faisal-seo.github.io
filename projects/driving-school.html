@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Auto Driving School Redesign Case Study | Khaled Faisal</title>
+    <meta name="description" content="Technical SEO, architecture restructuring, and developer governance case study for Texas DPS-approved driving education platform.">
+    
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --code-bg: #0b1120;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.7; }
+        .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- Navigation --- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        .nav-logo { font-size: 18px; font-weight: 700; color: var(--text-main); text-decoration: none; }
+        .nav-logo span { color: var(--accent-color); }
+        .nav-links { display: flex; gap: 24px; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 14px; font-weight: 600; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--accent-color); }
+
+        /* --- Breadcrumb & Header --- */
+        .breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
+        .breadcrumb a { color: var(--accent-color); text-decoration: none; }
+        h1 { font-size: 34px; font-weight: 800; line-height: 1.25; margin-bottom: 15px; color: var(--text-main); }
+        .meta-info { display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; color: var(--text-muted); padding-bottom: 30px; border-bottom: 1px solid var(--border-color); margin-bottom: 40px; }
+        .meta-info span strong { color: var(--text-main); }
+
+        /* --- Content Layout --- */
+        .section-block { margin-bottom: 40px; }
+        h2 { font-size: 22px; color: var(--accent-color); margin-bottom: 16px; border-left: 3px solid var(--accent-color); padding-left: 12px; }
+        p { color: #cbd5e1; margin-bottom: 16px; font-size: 15px; }
+        
+        ul { margin-left: 20px; margin-bottom: 20px; }
+        li { color: #cbd5e1; font-size: 15px; margin-bottom: 8px; }
+        
+        .highlight-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .highlight-box strong { color: var(--accent-color); }
+
+        .back-link {
+            display: inline-block;
+            margin: 40px 0 60px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        footer { text-align: center; padding: 40px 0 30px; font-size: 13px; color: var(--text-muted); border-top: 1px solid var(--border-color); }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 26px; }
+            nav { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="../index.html" class="nav-logo">Khaled<span>.SEO</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="mailto:your-email@example.com">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> / <a href="../projects.html">Projects</a> / A Auto Driving School Redesign
+        </div>
+
+        <header>
+            <h1>Technical SEO & Site Architecture Overhaul: A Auto Driving School</h1>
+            <div class="meta-info">
+                <span><strong>Role:</strong> SEO Team Lead & Technical Consultant</span>
+                <span><strong>Industry:</strong> State-Approved Driver Education (Texas DPS/TDLR)</span>
+                <span><strong>Focus:</strong> Content Governance, Taxonomy, Schema</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Background -->
+            <section class="section-block">
+                <h2>Project Overview</h2>
+                <p>A Auto Driving School provides Texas Department of Public Safety (DPS) and TDLR-approved driving courses for adults and teens. During a complete front-end redesign, critical SEO conflicts emerged between the developer's new layout framework and the existing state-compliant landing page content.</p>
+            </section>
+
+            <!-- The Problem -->
+            <section class="section-block">
+                <h2>The Challenge & Root Cause Analysis</h2>
+                <p>During the staging review, several architectural and search compliance risks were identified:</p>
+                <ul>
+                    <li><strong>Content Conflation:</strong> The engineering team accidentally truncated statutory course descriptions and omitted necessary state licensing disclosures.</li>
+                    <li><strong>Keyword Intent Dilution:</strong> The primary commercial H1 tag (<code>Texas DPS-Approved Online Driver's Education</code>) was replaced with a generic marketing slogan, jeopardizing rank positions for localized state queries.</li>
+                    <li><strong>Duplicate Crawl Paths:</strong> Course blocks were rendered twice on the same indexable document (an upfront grid and a redundant lower section), creating self-cannibalization and poor DOM efficiency.</li>
+                </ul>
+            </section>
+
+            <!-- Strategy & Execution -->
+            <section class="section-block">
+                <h2>Strategic SEO Implementation</h2>
+                <div class="highlight-box">
+                    <strong>Core Execution Strategy:</strong> Acted as the technical liaison between regulatory compliance, SEO intent, and front-end engineering to enforce strict architectural guardrails.
+                </div>
+                <ul>
+                    <li><strong>Content & Hierarchy Mapping:</strong> Restructured the entire HTML document object model (DOM), normalizing H1 through H4 structures and separating 6-Hour Adult courses from Teen Parent-Taught clusters.</li>
+                    <li><strong>Direct Developer Scaffolding:</strong> Provided production-ready HTML/CSS boilerplate directly to engineering to prevent further design/content mismatch.</li>
+                    <li><strong>Bilingual Course Siloing:</strong> Structured language variants (English & Spanish curricula) into clean internal paths rather than fragmented subdomains.</li>
+                    <li><strong>Structured Data Integration:</strong> Architected structured schema markup blueprints for <code>Course</code>, <code>EducationalOrganization</code>, and <code>FAQPage</code> for rich snippet qualification in Texas SERPs.</li>
+                </ul>
+            </section>
+
+            <!-- Results & Value -->
+            <section class="section-block">
+                <h2>Impact & Governance Takeaways</h2>
+                <p>This project demonstrated cross-functional leadership by resolving developer bottlenecks without compromising strict state regulations or organic search footprints:</p>
+                <ul>
+                    <li>Zero loss of core transactional keyword rankings during redesign transition.</li>
+                    <li>Eliminated 100% of duplicate course elements and restored full commercial intent across landing pages.</li>
+                    <li>Established a streamlined, scalable topical category map for ongoing content production.</li>
+                </ul>
+            </section>
+
+            <a href="../projects.html" class="back-link">← Back to All Projects</a>
+        </main>
+
+        <footer>
+            <p>© 2026 Khaled Faisal. Built with technical control on GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
